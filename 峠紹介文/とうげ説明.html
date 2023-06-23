@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>班員1の紹介</title>
-  <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>自己紹介</title>
 </head>
 <body>
-  <h1>班員2の紹介</h1>
-  <p>ここに班員2の詳細な紹介文が入ります。</p>
-
-  <a href="index.html">トップに戻る</a>
+<div class = "wrapper">
+  <h1>自己紹介</h1>
+  
+  <button onclick="toggleImage()">画像オンオフ</button>
+  <img id="profile-image" src="../峠紹介文\gitkadai.jpg" alt="">
+  
+  <div class="question">
+    <p>名前：峠藍叶</p>
+    <p>妹の名前：いない</p>
+    <p>誕生日：10月25日</p>
+    <p>好きな女優：広瀬すず</p>
+    <p>一番恥ずかしいと感じた出来事は？：中学の時に遊びでやってたtiktokをさらされたこと</p>
+    <p>今までもらったプレゼントで一番嬉しかったのは？：服</p>
+    <p>今までで一番楽しかったデートは？：京都で着物デート</p>
+  </div>
+  
+  <h2>班員からのコメント</h2>
+  <p>山崎：</p>
+  <p>西本：</p>
+  <p>難波：</p>
+  <p>齋藤：</p>
+  
+  <div class="button">
+    <h2>その他の班員一覧</h2>
+    <p><a href="../山崎紹介文/やまさき説明.html">山崎</a></p>
+    <p><a href="../西本紹介文/にしもと説明.html">西本</a></p>
+    <p><a href="../難波紹介文/なんば説明.html">難波</a></p>
+    <p><a href="../斎藤紹介文/さいとう説明.html">齋藤</a></p>
+  </div>
+  
+  <p><a href="../index.html">ホームに戻る</a></p>
+  
+  <script>
+    function toggleImage() {
+      var image = document.getElementById("profile-image");
+      if (image.style.display === "none") {
+        image.style.display = "block";
+      } else {
+        image.style.display = "none";
+      }
+    }
+  </script>
+</div>
 </body>
 </html>

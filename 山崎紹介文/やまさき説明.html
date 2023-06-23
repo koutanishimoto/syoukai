@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>自己紹介</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: black; /* 背景色を黒に設定 */
+      color: white; /* 文字色を白に設定 */
+    }
+    
+    h1 {
+      margin-top: 50px;
+    }
+    
+    img {
+      width: 280px;
+      height: 300px;
+      border-radius: 30%;
+      margin-top: 30px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .question {
+      margin-top: 30px;
+    }
+    
+    .button {
+      margin-top: 50px;
+    }
+    
+    a {
+      text-decoration: none; /* リンクの下線を消す */
+      color: blue; /* リンクの色を青に設定 */
+    }
+  </style>
+</head>
+<body>
+  <h1>自己紹介</h1>
+  
+  <button onclick="toggleImage()">画像オンオフボタン</button> <!-- 画像の表示切り替えボタンを追加 -->
+  <img id="profile-image" src="../山崎紹介文/やまちゃん自己紹介画像.jpg" alt="本人画像">
+  
+  <div class="question">
+    <p>名前: 山﨑 拓巳</p>
+    <p>Q.妹の名前</p>
+    <p> A.いないです</p>
+    <p>Q.誕生日</p>
+    <p> A.１２/１８</p>
+    <p>Q.好きな女優</p>
+    <p>A.新垣結衣</p>
+    <p>Q.一番恥ずかしいと感じた出来事は？</p>
+    <p>A.友達だと思って喋りかけたら、全く知らない人だったとき</p>
+    <p>Q.今までもらったプレゼントで一番嬉しかったのは？</p>
+    <p>A.靴</p>
+    <p>Q.今までで一番楽しかったデートは？</p>
+    <p>A.祭り</p>
+  </div>
+  
+  <div class="button">
+    <h2>その他の班員一覧</h2>
+    <p><a href="../峠紹介文/とうげ説明.html">峠 藍叶</a></p>
+    <p><a href="../西本紹介文/にしもと説明.html">西本 航大</a></p>
+    <p><a href="../難波紹介文/なんば説明.html">難波 唯翔</a></p>
+    <p><a href="../斎藤紹介文/さいとう説明.html">齋藤 栄治</a></p>
+  </div>
+  
+  <p><a href="../index.html">ホームに戻る</a></p>
+  
+  <script>
+    function toggleImage() {
+      var image = document.getElementById("profile-image");
+      if (image.style.display === "none") {
+        image.style.display = "block";
+      } else {
+        image.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
