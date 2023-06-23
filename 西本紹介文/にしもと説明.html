@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>kouta's page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    
+    h1 {
+      font-family: 'Helvetica',sans-serif;
+      margin-top: 50px;
+    }
+    
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-top: 30px;
+    }
+    
+    .question {
+      margin-top: 30px;
+    }
+    
+    .button {
+      margin-top: 50px;
+    }
+    
+    #F{
+    display: none;
+	}
+	.F{
+    display: inline-block;
+    background: #b6beff;
+    padding: 5px 10px;
+    cursor: pointer;
+	}
+	.G{
+  
+	}
+	#F:checked+label+.G{
+    display: none;
+	}
+	
+	.box27 {
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 3px #62c1ce;
+	}
+	.box27 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -27px;
+    left: -3px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 17px;
+    background: #62c1ce;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+	}
+	.box27 p {
+    margin: 0; 
+    padding: 0;
+	}
+  </style>
+</head>
+<body>
+  <h1>Profile</h1>
+  
+  <input type = "checkbox" id = "F">
+  <label class ="F" for = "F">画像表示 ON OFF ボタン</label>
+  <div class = "G"><img src = "kouta.jpg"></div>
+  
+  <div class="question">
+    <p>名前:  西本 航大</p>
+    <p>妹の名前:  西本 愛美</p>
+    <p>誕生日:  7/22</p>
+    <p>好きな女優:  小松 菜奈</p>
+    <p>一番恥ずかしいと感じた出来事は？  一発逆転ですべった</p>
+    <p>今までもらったプレゼントで一番嬉しかったのは？  手紙</p>
+    <p>今までで一番楽しかったデートは？  福岡旅行</p>
+  </div>
+  
+  
+	<div class="box27">
+    <span class="box-title">班員からのコメント</span>
+    <p>齋藤からのコメント:</p>
+    <p>難波からのコメント:</p>
+    <p>峠からのコメント:</p>
+    <p>山崎からのコメント:</p>
+	</div>
+  
+  <div class="button"> 
+  	<h2>その他の班員一覧</h2>
+    <p><a href="../峠紹介文/とうげ説明.html">峠</a></p>
+    <p><a href="../山崎紹介文/やまさき説明.html">山﨑</a></p>
+    <p><a href="../難波紹介文/なんば説明.html">難波</a></p>
+    <p><a href="../斎藤紹介文/さいとう説明.html">齋藤</a></p>
+  </div>
+  
+  <p><a href="../index.html">ホームに戻る</a></p>
+</body>
+</html>
