@@ -1,0 +1,15 @@
+#F{
+    display: none;
+}
+.F{
+    display: inline-block;
+    background: #b6beff;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.G{
+  
+}
+#F:checked+label+.G{
+    display: none;
+}
