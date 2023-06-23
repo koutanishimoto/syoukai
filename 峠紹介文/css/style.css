@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* すべてのWebページに適用される */
+html {
+	font-family: sans-serif;
+}
+html * {
+	box-sizing: border-box;
+}
+.wrapper {
+	margin: 0 auto 0 auto;
+	max-width: 960px;
+}
+
+body {
+      font-family: Arial, sans-serif;
+	background-image: url(https://beiz.jp/images_M/white/white_00117.jpg);
+	background-size: auto;
+    }
+    
+    a {
+      text-decoration: none;
+      color: blue; 
+    }
+
+
+    h1 {
+      margin-top: 50px;
+    }
+    
+    img {
+      width: 280px;
+      height: 300px;
+      border-radius: 30%;
+      margin-top: 30px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .question {
+      margin-top: 30px;
+    }
+    
+    .button {
+      margin-top: 50px;
+    }
+}
