@@ -1,25 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head> 
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="img/BOSS LOVE CAR.jpg" href="img/BOSS LOVE CAR.jpg"><!--サイトアイコン-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-        <title>西本山崎難波齋藤小峠</title>
-    </head>
-    <body>
-        <header>
-            <nav class="flex">
-                <div class="logo"><a href="" ><img src="img/logo.jpg" alt=""></a></div>
-                <div class="link">
-                    <ul>
-                        <li class="campany"><a href="西本紹介文/にしもと説明.html">西本へ</a></li>
-                        <li class="campany"><a href="山崎紹介文/やまさき説明.html">山崎へ</a></li>
-                        <li class="campany"><a href="峠紹介文/とうげ説明.html">峠へ</a></li>
-                        <li class="campany"><a href="難波紹介文/なんば説明.html">難波へ</a></li>
-                        <li class="campany"><a href="斎藤紹介文/さいとう説明.html">齋藤へ</a></li>
-                    </ul>
-                </div>
-   		</header>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>班員紹介ページ</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        body {
+            background-color: black;
+            color: rgb(255, 255, 255);
+        }
+        .dark-mode {
+            background-color: rgba(143, 27, 27, 0.363);
+            color: black;
+        }
+    </style>
+    <link rel="icon" type="image/jpeg" href="img/BOSS LOVE CAR.jpg"><!--サイトアイコン-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+</head>
+<body onload="showClock()">
+    <header>
+        <nav class="flex">
+            <div class="logo"><a href=""><img src="img/logo.jpg" alt=""></a></div>
+            <div class="link">
+                <h2>班員一覧</h2>
+                <ul>
+                    <li class="company"><a href="西本紹介文/にしもと説明.html">西本へ</a></li>
+                    <li class="company"><a href="山崎紹介文/やまさき説明.html">山崎へ</a></li>
+                    <li class="company"><a href="峠紹介文/とうげ説明.html">峠へ</a></li>
+                    <li class="company"><a href="難波紹介文/なんば説明.html">難波へ</a></li>
+                    <li class="company"><a href="斎藤紹介文/さいとう説明.html">齋藤へ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div id="clock"></div>
+    <button onclick="toggleBackground()">背景色切り替え</button>
+    
+    <div id="counter">0</div>
+    
+    <button onclick="incrementCounter()">カウント</button>
+    <button onclick="resetCounter()">カウンターリセット</button>
+    
+    <div id="alert"></div>
+    <input type="number" id="inputNumber" placeholder="数を入力">
+    <button onclick="showAlert()">アラート表示</button>
+    
+    <script>
+        // 時計表示
+        function showClock() {
+            var now = new Date();
+            var clockElement = document.getElementById("clock");
+            clockElement.textContent = now.toLocaleTimeString();
+            setTimeout(showClock, 1000); // 毎秒更新
+        }
+
+        // 背景色切り替え
+        function toggleBackground() {
+            var bodyElement = document.getElementsByTagName("body")[0];
+            bodyElement.classList.toggle("dark-mode");
+        }
+
+        // カウンター
+        var count = 0;
+        function incrementCounter() {
+            count++;
+            document.getElementById("counter").textContent = count;
+        }
+
+        // カウンターリセット
+        function resetCounter() {
+            count = 0;
+            document.getElementById("counter").textContent = count;
+        }
+
+        // アラート表示
+        function showAlert() {
+            var inputElement = document.getElementById("inputNumber");
+            var num = parseInt(inputElement.value);
+
+            for (var i = 0; i < num; i++) {
+                alert("メッセージ" + (i + 1));
+            }
+        }
+    </script>
+</body>
 </html>
