@@ -2,33 +2,43 @@
 <html>
     <head> 
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <meta name=”robots” content=”noindex” />
-        <meta name=”robots” content=”noindex,nofollow“>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/png" href="img/icon.png"><!--サイトアイコン-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-        <title>難波ゆいとの場所だぜ！！ここはよぉ！！</title>
- </head>
+
+        <title>ここはゆいとの場所だぜぇ！！</title>
+   <script>
+    function showMessages() {
+      var input = document.getElementById("textbox").value;
+      var messages = "";
+
+      for (var i = 0; i < input; i++) {
+        messages += "アラートメッセージ " + (i + 1) + "\n";
+      }
+
+      alert(messages);
+    }
+     </script>
+     </head>
     <body>
         <header>
             <nav class="flex">
                 <div class="logo"><a href="" ><img src="img/logo.jpg" alt=""></a></div>
                 <div class="link">
                 <ul>
-                <li class="top"><a href="index.html">TOPメニューへ</a></li>
+                <li class="top"><a href="C:\Users\3020e\OneDrive\ドキュメント\syoukai\index.html">TOPメニューへ</a></li>
 		<h1 class="contentTitle">ゆいとの説明</h1>
 		<p>～なんばゆいとの紹介～</p>
 		<p>　名前　：なんばゆいと</p>
-    <p>妹の名前:　ジョナサン<br>
-		<p>生年月日:　1974年2月6日<br>
-    <p>好きな女優：　橋本マナミ<br>
-  　<p>今までで一番恥ずかしかったこと：<br>
-　　<p>今までもらったプレゼントで一番うれしかった物：<br>
-    <p>今までで一番楽しかったデート：<br>
+    <p>妹の名前:　ののか<br>
+		<p>生年月日:　2003年10月15日<br>
+    <p>好きな女優：　仲間由紀恵<br>
+  　<p>今までで一番恥ずかしかったこと：同じ場所で二回こけたこと<br>
+　　<p>今までもらったプレゼントで一番うれしかった物：誕生日に友達がAimerのライブに連れて行ってくれたこと<br>
+    <p>今までで一番楽しかったデート：夏祭り<br>
 			</p>
                 </div>
             </nav>
        </header>
+         <label for="textbox">数を入力してください:</label>
+  <input type="number" id="textbox" min="0">
+  <button onclick="showMessages()">表示する</button>
     </body>
 </html>
