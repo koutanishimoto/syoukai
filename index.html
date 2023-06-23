@@ -1,16 +1,17 @@
 <!doctype html>
 <html>
-    <head> 
+    <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
         <link rel="icon" type="img/BOSS LOVE CAR.jpg" href="img/BOSS LOVE CAR.jpg"><!--サイトアイコン-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <title>西本山崎難波齋藤小峠</title>
     </head>
     <body>
         <header>
             <nav class="flex">
-                <div class="logo"><a href="" ><img src="img/logo.jpg" alt=""></a></div>
+                <div class="logo"><a href=""><img src="img/logo.jpg" alt=""></a></div>
                 <div class="link">
                     <ul>
                         <li class="campany"><a href="西本紹介文/にしもと説明.html">西本へ</a></li>
@@ -20,6 +21,19 @@
                         <li class="campany"><a href="斎藤紹介文/さいとう説明.html">齋藤へ</a></li>
                     </ul>
                 </div>
-   		</header>
+            </nav>
+        </header>
+
+        <input type="number" id="messageCount" min="1" placeholder="表示するアラートメッセージの数">
+        <button onclick="showAlerts()">アラート表示</button>
+
+        <script>
+            function showAlerts() {
+                var count = parseInt(document.getElementById('messageCount').value);
+                for (var i = 0; i < count; i++) {
+                    alert('アラートメッセージ ' + (i + 1));
+                }
+            }
+        </script>
     </body>
 </html>
