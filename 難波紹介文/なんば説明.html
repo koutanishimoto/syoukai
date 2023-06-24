@@ -1,44 +1,140 @@
 <!doctype html>
 <html>
-    <head> 
-        <meta charset="UTF-8">
+<head> 
+    <meta charset="UTF-8">
+    <title>ここはゆいとの場所だぜぇ！！</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
 
-        <title>ここはゆいとの場所だぜぇ！！</title>
-   <script>
-    function showMessages() {
-      var input = document.getElementById("textbox").value;
-      var messages = "";
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            width: 100%;
+        }
 
-      for (var i = 0; i < input; i++) {
-        messages += "アラートメッセージ " + (i + 1) + "\n";
-      }
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+        }
 
-      alert(messages);
+        .logo img {
+            height: 40px;
+        }
+
+        .link ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .link ul li {
+            display: inline;
+            margin-left: 10px;
+        }
+
+        .link ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .contentTitle {
+            margin-top: 30px;
+        }
+
+        #profile-image {
+            max-width: 300px;
+            height: auto;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+        .button {
+            margin-top: 30px;
+        }
+
+        .button h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .button p {
+            margin: 0;
+        }
+
+        .button a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .comento {
+            margin-top: 30px;
+        }
+
+        .comento p {
+            margin: 0;
+        }
+       
+    body {
+        /* 既存のスタイル */
+
+        background-color: #f2f2f2;
+        background-image: linear-gradient(45deg, #ff9d6f, #fbae48);
     }
-     </script>
-     </head>
-    <body>
-        <header>
-            <nav class="flex">
-                <div class="logo"><a href="" ><img src="img/logo.jpg" alt=""></a></div>
-                <div class="link">
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="flex">
+            <div class="logo">
+                <a href=""><img src="img/logo.jpg" alt=""></a>
+            </div>
+            <div class="link">
                 <ul>
-                <li class="top"><a href="C:\Users\3020e\OneDrive\ドキュメント\syoukai\index.html">TOPメニューへ</a></li>
-		<h1 class="contentTitle">ゆいとの説明</h1>
-		<p>～なんばゆいとの紹介～</p>
-		<p>　名前　：なんばゆいと</p>
-    <p>妹の名前:　ののか<br>
-		<p>生年月日:　2003年10月15日<br>
-    <p>好きな女優：　仲間由紀恵<br>
-  　<p>今までで一番恥ずかしかったこと：同じ場所で二回こけたこと<br>
-　　<p>今までもらったプレゼントで一番うれしかった物：誕生日に友達がAimerのライブに連れて行ってくれたこと<br>
-    <p>今までで一番楽しかったデート：夏祭り<br>
-			</p>
-                </div>
-            </nav>
-       </header>
-         <label for="textbox">数を入力してください:</label>
-  <input type="number" id="textbox" min="0">
-  <button onclick="showMessages()">表示する</button>
-    </body>
+                    <li class="top"><a href="C:\Users\3020e\OneDrive\ドキュメント\syoukai\index.html">TOPメニューへ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="contentTitle">ゆいとの説明</h1>
+    <img id="profile-image" src="../難波紹介文/唯人イメージ画像.jpg" alt="本人画像">
+    <p>～なんばゆいとの紹介～</p>
+    <p>名前：なんばゆいと</p>
+    <p>妹の名前：ののか</p>
+    <p>生年月日：2003年10月15日</p>
+    <p>好きな女優：仲間由紀恵</p>
+    <p>今までで一番恥ずかしかったこと：同じ場所で二回こけたこと</p>
+    <p>今までもらったプレゼントで一番うれしかった物：誕生日に友達がAimerのライブに連れて行ってくれたこと</p>
+    <p>今までで一番楽しかったデート：夏祭り</p>
+
+    <div class="button">
+        <h2>班員一覧</h2>
+        <p><a href="../峠紹介文/とうげ説明.html">峠 藍叶</a></p>
+        <p><a href="../西本紹介文/にしもと説明.html">西本 航大</a></p>
+        <p><a href="../山崎紹介文/やまさき説明.html">山﨑 拓巳</a></p>
+        <p><a href="../斎藤紹介文/さいとう説明.html">齋藤 栄治</a></p>
+    </div>
+
+    <h2>コメント</h2>
+        <p>西本:</p>
+        <p>齋藤:もっとデザインにこだわれていたらよかった.....</p>
+        <p>山崎:</p>
+        <p>峠:</p>
+    </div>
+</body>
 </html>
