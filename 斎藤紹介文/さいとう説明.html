@@ -29,7 +29,25 @@
 <body>
     <main>
         <div class="img_area">
-            <img src="img/17974.jpg" alt="">
+            <div id="disp"><img src="img/17974.jpg"></div>
+        写真：
+        <input type="button" value="表示" onclick="hyoji(0)">
+        <input type="button" value="非表示" onclick="hyoji(1)">
+        <script>
+
+            function hyoji(num)
+            {
+              if (num == 0)
+              {
+                document.getElementById("disp").style.display="block";
+              }
+              else
+              {
+                document.getElementById("disp").style.display="none";
+              }
+            }
+            
+            </script>
             
         </div>
         <div class="box_space"></div>
@@ -62,7 +80,7 @@
             <div class="box_comento">
                 <h2>コメント</h2>
                 <div class="comento">
-                    <p>西本:</p>
+                    <p>西本:思想が強いですね</p>
                     <p >難波:</p>
                     <p>山崎:</p>
                     <p>峠:</p>
