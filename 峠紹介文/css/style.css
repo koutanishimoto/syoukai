@@ -14,7 +14,6 @@ html * {
 
 body {
       font-family: Arial, sans-serif;
-	background-image: url(https://beiz.jp/images_M/white/white_00117.jpg);
 	background-size: auto;
     }
     
@@ -22,27 +21,87 @@ body {
       text-decoration: none;
       color: blue; 
     }
+    .home {
+    	color: red;
+    }
+    .img {
+    	text-align : center;
+    }
 
 
     h1 {
+    text-align: center;
       margin-top: 50px;
     }
-    
     img {
-      width: 280px;
-      height: 300px;
-      border-radius: 30%;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
       margin-top: 30px;
       display: block;
       margin-left: auto;
-      margin-right: auto;
+      margin-right: auto;;
     }
     
     .question {
       margin-top: 30px;
     }
     
-    .button {
-      margin-top: 50px;
+    .hoka {
+      
     }
+    .box2 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #001200;/*文字色*/
+    background: #FFF;
+    border: solid 3px #001200;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
+.box2 p {
+    margin: 0; 
+    padding: 0;
+}
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
 }

@@ -7,8 +7,10 @@
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      background-color: black; /* 背景色を黒に設定 */
-      color: white; /* 文字色を白に設定 */
+      background-image: url("83475.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: black; 
     }
     
     h1 {
@@ -33,6 +35,14 @@
       margin-top: 50px;
     }
     
+    .comment {
+      margin-top: 30px;
+    }
+    
+    .comment-text {
+      margin-bottom: 10px;
+    }
+    
     a {
       text-decoration: none; /* リンクの下線を消す */
       color: blue; /* リンクの色を青に設定 */
@@ -42,7 +52,7 @@
 <body>
   <h1>自己紹介</h1>
   
-  <button onclick="toggleImage()">画像オンオフボタン</button> <!-- 画像の表示切り替えボタンを追加 -->
+  <button onclick="toggleImage()">画像オンオフ</button> <!-- 画像の表示切り替えボタンを追加 -->
   <img id="profile-image" src="../山崎紹介文/やまちゃん自己紹介画像.jpg" alt="本人画像">
   
   <div class="question">
@@ -59,6 +69,14 @@
     <p>A.靴</p>
     <p>Q.今までで一番楽しかったデートは？</p>
     <p>A.祭り</p>
+  </div>
+
+  <div class="comment">
+    <h2>班員からのコメント</h2>
+    <p class="comment-text">斎藤からのコメント</p>
+    <p class="comment-text">西本からのコメント</p>
+    <p class="comment-text">難波からのコメント</p>
+    <p class="comment-text">峠からのコメント</p>
   </div>
   
   <div class="button">
