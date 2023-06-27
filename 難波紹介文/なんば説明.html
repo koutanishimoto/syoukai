@@ -60,6 +60,7 @@
             height: auto;
             border-radius: 50%;
             margin-top: 20px;
+            display: none; /* 画像は最初は非表示 */
         }
 
         .button {
@@ -87,15 +88,25 @@
         .comento p {
             margin: 0;
         }
-       
-    body {
-        /* 既存のスタイル */
 
-        background-color: #f2f2f2;
-        background-image: linear-gradient(45deg, #ff9d6f, #fbae48);
-    }
+        body {
+            /* 既存のスタイル */
+
+            background-color: #f2f2f2;
+            background-image: linear-gradient(45deg, #ff9d6f, #fbae48);
+        }
 
     </style>
+    <script>
+        function toggleImage() {
+            var img = document.getElementById("profile-image");
+            if (img.style.display === "none") {
+                img.style.display = "block";
+            } else {
+                img.style.display = "none";
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -110,10 +121,10 @@
             </div>
         </nav>
     </header>
-
-    <h1 class="contentTitle">ゆいとの説明</h1>
+    <h1 class="contentTitle">ゆいとの説明:作成者/齋藤栄治</h1>> 
     <img id="profile-image" src="../難波紹介文/唯人イメージ画像.jpg" alt="本人画像">
     <p>～なんばゆいとの紹介～</p>
+       <button onclick="toggleImage()">画像のオン/オフ</button>
     <p>名前：なんばゆいと</p>
     <p>妹の名前：ののか</p>
     <p>生年月日：2003年10月15日</p>
@@ -131,10 +142,10 @@
     </div>
 
     <h2>コメント</h2>
-        <p>西本:あっそぼうぜ！<p>
+        <p>西本:あっそぼうぜ！</p>
         <p>齋藤:もっとデザインにこだわれていたらよかった.....</p>
         <p>山崎:あっそびたい！</p>
         <p>峠:またぱちんこいこう！</p>
-    </div>
 </body>
 </html>
+
